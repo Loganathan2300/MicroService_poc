@@ -1,0 +1,29 @@
+#spring.application.name=config-server
+#server:
+#  port: 8888
+#  spring:
+#    profiles:
+#      active: native
+#      application:
+#        name: config-server
+#        cloud:
+#          config:
+#            server:
+#              native:
+#                search-location: classpath:/configuration
+
+server:
+  port: 8889
+
+spring:
+  application:
+    name: config-server
+
+  profiles:
+    active: native
+
+cloud:
+  config:
+    server:
+      native:
+        search-locations: classpath:/configuration

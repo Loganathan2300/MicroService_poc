@@ -1,0 +1,36 @@
+
+
+spring:
+  application:
+    name: server
+  config:
+    import: optional:configserver:http://localhost:8888
+
+server:
+  port: 8761
+#eureka:
+#  server:
+#    eviction-interval-timer-in-ms: 60000
+#    enable-self-preservation: true
+#    renewal-percent-threshold: 0.85
+#  instance:
+#    hostname: localhost
+#    prefer-ip-address: true
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+#    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+
+
+
+#spring.application.name=server
+#spring.config.import=optional:configserver:http://localhost:8888
+#
+#eureka.instance.hostname=localhost
+#eureka.client.register-with-eureka=false
+#eureka.client.fetch-registry=false
+#eureka.client.service-url.defaultZone=http://${eureka.instance.hostname}:${server.port}/eureka/
+#
+#server.port=8761
